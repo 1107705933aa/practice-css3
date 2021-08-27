@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品高亮展示</title>
+    <style type="text/css">
+        body {
+            background-color: #ddd;
+        }
+
+        #main {
+            margin: 100px auto;
+            width: 800px;
+            clear: both;
+        }
+
+        #main li {
+            float: left;
+            list-style: none;
+            width: 240px;
+            padding: 1px;
+            border: 1px solid rgba(255, 0, 0, 0);
+            cursor: pointer;
+            background-color: #fff;
+            margin: 5px;
+        }
+
+        #main li:hover {
+            border: 1px solid rgba(255, 0, 0, 1);
+        }
+
+        #main li:hover img {
+            opacity: 0.7;
+        }
+
+        .img img {
+            transition: all .6s;
+            width: 240px;
+        }
+
+        .goods_title {
+            margin: 10px;
+            height: 35px;
+            overflow: hidden;
+            color: #666;
+        }
+
+        .price {
+            margin: 10px;
+            color: #f00;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <ul>
+            <li class="img">
+                <img src="./img/top.jpg" alt="">
+                <div class="goods_title">
+                    Gigabyte/技嘉 B85M-D3V-A DDR3台式机电脑主板升级至B85大板更强
+                </div>
+                <div class="price">￥499</div>
+            </li>
+            <li class="img">
+                <img src="./img/top.jpg" alt="">
+                <div class="goods_title">
+                    Gigabyte/技嘉 B85M-D3V-A DDR3台式机电脑主板升级至B85大板更强
+                </div>
+                <div class="price">￥499</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

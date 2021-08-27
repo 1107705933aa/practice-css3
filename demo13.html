@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>发光字、立体字</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            font: bold 55px "Microsoft YaHei";
+            background-color: #666;
+        }
+
+        .font1 {
+            color: #fff;
+            text-shadow: 0 0 20px red;
+            /* x轴偏移2，y轴偏移2，阴影3 */
+            /* text-shadow: 2px 2px 3px #000; */
+        }
+
+        .font2 {
+            color: #000;
+            text-shadow: 0 1px 1px #fff;
+        }
+
+        .font3 {
+            color: #fff;
+            text-shadow: 1px 1px rgba(197, 223, 248, 0.8),
+                2px 2px rgba(197, 223, 248, 0.8),
+                3px 3px rgba(197, 223, 248, 0.8),
+                4px 4px rgba(197, 223, 248, 0.8),
+                5px 5px rgba(197, 223, 248, 0.8),
+                6px 6px rgba(197, 223, 248, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font1">Panda</div>
+    <div class="font2">APPLE STYLE</div>
+    <div class="font3">3D TEXT EFFECT</div>
+</body>
+
+</html>

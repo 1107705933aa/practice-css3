@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画三角形和对话框</title>
+    <style type="text/css">
+        .sanjiao {
+            /* border: 50px solid #ccc; */
+            border-top: 50px solid #ccc;
+            border-left: 50px solid transparent;
+            border-bottom: 50px solid transparent;
+            border-right: 50px solid transparent;
+            width: 0;
+            height: 0;
+            margin: 50px auto;
+        }
+
+        .dialog {
+            position: relative;
+            background-color: #6A6;
+            margin: 50px auto;
+            width: 300px;
+            height: 25px;
+            line-height: 25px;
+            padding: 10px;
+            border-radius: 6px;
+            color: #fff;
+        }
+        .dialog::before {
+            position: absolute;
+            content: ''; /* 必写 */
+            border-left: 0px solid #6A6;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid #6A6;
+            left: -10px;
+            top: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sanjiao"></div>
+    <div class="dialog">
+        哈喽，大家好！我是熊猫！
+    </div>
+</body>
+
+</html>

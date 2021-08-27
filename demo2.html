@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style type="text/css">
+        /* 没任何交互 */
+        a {
+            color: yellow;
+        }
+
+        /* 已访问过 */
+        a:visited {
+            color: #f00;
+        }
+
+        /* 鼠标进入 */
+        a:hover {
+            color: #000;
+        }
+
+        /* 鼠标点击 */
+        a:active {
+            color: #0f0;
+        }
+        
+        /* 元素选择器 */
+        /* input可用 */
+        input:enabled {
+            background-color: #0f0;
+        }
+
+        /* input不可用 */
+        input:disabled {
+            background-color: #f00;
+        }
+
+        /* radio:checked */
+    </style>
+</head>
+
+<body>
+    <a href="#">伪类选择器</a>
+    <hr>
+
+    <input type="text"><br />
+    <input type="text" disabled>
+</body>
+
+</html>

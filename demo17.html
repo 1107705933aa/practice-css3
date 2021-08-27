@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation复合属性</title>
+    <style type="text/css">
+        .rect {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: fixed;
+            /* infinite:反复执行 */
+            /* animation: mymove 2s infinite; */
+            animation-name: mymove;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            /* 延迟3s后执行 */
+            animation-delay: 3s;
+            /* 循环3次 */
+            animation-iteration-count: 3;
+            /* 循环执行 */
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: normal; */
+            /* 每次都反向执行 */
+            animation-direction: alternate;
+        }
+
+        /* 关键帧 */
+        /* @keyframes mymove {
+            from {
+                top: 0;
+                left: 20%;
+            }
+
+            to {
+                top: 0;
+                left: 80%;
+            }
+        } */
+
+        @keyframes mymove {
+            0% {
+                top: 0;
+                left: 20%;
+            }
+
+            25% {
+                top: 0;
+                left: 80%;
+            }
+
+            50% {
+                top: 80%;
+                left: 80%;
+            }
+
+            75% {
+                top: 80%;
+                left: 20%;
+            }
+
+            100% {
+                top: 0;
+                left: 20%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rect"></div>
+</body>
+
+</html>

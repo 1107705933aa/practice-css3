@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡属性</title>
+    <style type="text/css">
+       .ceng {
+           width: 100px;
+           height: 100px;
+           background-color: pink;
+           cursor: pointer;
+           transition-duration: 3s;
+           transition-property: all;
+           transition-delay: .2s;
+           /* ease:先慢再快再慢  linear:匀速 ease-in:从慢到快 ease-out:从快到慢  */
+           transition-timing-function: ease;
+           /* 简写 */
+           /* transition: all 3s .2s ease; */
+       }
+       .ceng:hover {
+           width: 300px;
+           height: 300px;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="ceng"></div>
+</body>
+
+</html>

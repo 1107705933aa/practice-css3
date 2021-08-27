@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style type="text/css">
+        .demo {
+            border: 1px solid #ccc;
+            width: 300px;
+            margin: 50px auto;
+            padding: 10px;
+        }
+
+        /* 选择第一个字 */
+        .demo::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            float: left;
+        }
+
+        /* 选择第一行 */
+        .demo::first-line {
+            color: #f00;
+        }
+
+        .demo01 {
+            width: 300px;
+            border: 1px solid #ccc;
+            margin: 10px auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .demo01::before {
+            width: 300px;
+            content: url(./img/top.jpg);
+            display: block;
+        }
+
+        .demo01::after {
+            width: 300px;
+            content: url(./img/bottom.jpg);
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        伪元素概念是为了格式化文档树以外的信息。也就是说，伪类和伪元素是用来修饰不在文档树中的部分；
+        比如，一句话中的第一个字母，或者是列表中的第一个元素。下面分别对伪类和伪元素进行解释：
+    </div>
+    <div class="demo01">
+        玩转CSS3新特性
+    </div>
+</body>
+
+</html>

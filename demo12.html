@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-overflow解决文字排版</title>
+    <style type="text/css">
+    /* 兼容浏览器 */
+    /* -ms-代表【ie】内核识别码
+    -moz-代表火狐【firefox】内核识别码
+    -webkit-代表谷歌【chrome】/苹果【safari】内核识别码
+    -o-代表欧朋【opera】内核识别码 */
+        .demo {
+            margin: 30px auto;
+            width: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 50px;
+            -webkit-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            /* 强制不换行 */
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo">
+        唐纳德·特朗普（Donald Trump，1946年6月14日- ），出生于美国纽约，祖籍德国巴伐利亚 [1] ，德裔美国共和党籍政治家、企业家、房地产商人、电视人 [2]
+        ，第45任美国总统（2017年1月20日-2021年1月20日）。
+    </div>
+</body>
+
+</html>
